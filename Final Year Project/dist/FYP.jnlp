@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FYP.jnlp">
+  <information>
+    <title>FYP</title>
+    <vendor>Mally</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FYP.jar" size="6211858" download="eager" />
+    <jar href="lib/commons-codec-1.5.jar" size="79316" download="eager" />
+    <jar href="lib/commons-logging-1.1.jar" size="57013" download="eager" />
+    <jar href="lib/jave-1.0.2.jar" size="5871889" download="eager" />
+    <jar href="lib/junit-4.11.jar" size="270727" download="eager" />
+    <jar href="lib/log4j-1.2.13.jar" size="386437" download="eager" />
+    <jar href="lib/poi-3.10-FINAL-20140208.jar" size="2092682" download="eager" />
+    <jar href="lib/poi-examples-3.10-FINAL-20140208.jar" size="332585" download="eager" />
+    <jar href="lib/poi-excelant-3.10-FINAL-20140208.jar" size="33669" download="eager" />
+    <jar href="lib/poi-ooxml-3.10-FINAL-20140208.jar" size="1085133" download="eager" />
+    <jar href="lib/poi-ooxml-schemas-3.10-FINAL-20140208.jar" size="5470524" download="eager" />
+    <jar href="lib/poi-scratchpad-3.10-FINAL-20140208.jar" size="1307106" download="eager" />
+    <jar href="lib/vlcj-3.0.1.jar" size="369741" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="FYP" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="fyp.FYP"  name="FYP" />
+  <update check="always"/>
+</jnlp>

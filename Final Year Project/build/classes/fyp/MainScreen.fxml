@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="fyp.MainScreenController">
+  <children>
+    <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="1280.0" useSystemMenuBar="true">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem onAction="#handle" text="Import File(s)" fx:id="import" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <SplitPane dividerPositions="0.5" focusTraversable="true" orientation="VERTICAL" prefHeight="696.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="24.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="">
+          <children>
+            <SplitPane dividerPositions="0.3667711598746082" focusTraversable="true" prefHeight="344.0" prefWidth="1278.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" onMouseDragReleased="#handle" prefHeight="160.0" prefWidth="100.0">
+                  <children>
+                    <GridPane fx:id="gridPane" alignment="CENTER" hgap="10.0" vgap="10.0" />
+                    <ListView fx:id="listView" prefHeight="342.0" prefWidth="465.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                  <children>
+                    <Label fx:id="previewBoxLabel" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="88.0" layoutY="25.0" prefHeight="239.0" prefWidth="368.0" text="" />
+                    <Label id="previewBoxLabel" fx:id="previewPowerPointBox" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="491.0" layoutY="25.0" prefHeight="239.0" prefWidth="290.0" text="" />
+                    <Button fx:id="playID" layoutX="413.0" layoutY="299.0" mnemonicParsing="false" onAction="#playButton" prefHeight="35.0" prefWidth="43.0" text="" />
+                    <HBox layoutX="378.0" layoutY="318.0" prefHeight="24.0" prefWidth="97.0" />
+                    <Button fx:id="stopID" layoutX="459.0" layoutY="299.0" mnemonicParsing="false" onAction="#stopButton" prefHeight="36.0" prefWidth="43.0" text="" />
+                    <Button fx:id="marker" layoutX="505.0" layoutY="299.0" mnemonicParsing="false" onAction="#pptMarker" prefHeight="36.0" prefWidth="37.0" text="" />
+                    <Button fx:id="inCutID" layoutX="286.0" layoutY="299.0" mnemonicParsing="false" onAction="#inCut" prefHeight="34.000099999997474" prefWidth="35.0" text="" />
+                    <Button fx:id="outCutID" layoutX="325.0" layoutY="299.0" mnemonicParsing="false" onAction="#outCut" prefHeight="34.999900000002526" prefWidth="35.0" text="" />
+                    <Button fx:id="cutDo" layoutX="364.0" layoutY="299.0" mnemonicParsing="false" onAction="#cut" prefHeight="35.0" prefWidth="46.0" text="" />
+                  </children>
+                </AnchorPane>
+              </items>
+            </SplitPane>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="344.0001220703125" prefWidth="1278.0">
+          <children>
+            <TableView fx:id="tableView" layoutX="305.0" layoutY="36.0" prefHeight="287.9999000000025" prefWidth="936.0" />
+            <Slider id="s" fx:id="slider" blockIncrement="10.0" layoutX="305.0" layoutY="1.0" majorTickUnit="1.0" minorTickCount="10" opacity="1.0" orientation="HORIZONTAL" prefWidth="935.9999000000025" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+            <Button fx:id="addClip" layoutX="86.0" layoutY="84.0" mnemonicParsing="false" onAction="#AddClipBeta" prefHeight="35.0" prefWidth="126.0" style="" text="" />
+            <Button fx:id="addSlide" layoutX="43.0" layoutY="158.0" mnemonicParsing="false" onAction="#addSlideBeta" prefHeight="36.0" prefWidth="219.0" text="" />
+            <Button fx:id="importFiles" layoutX="72.0" layoutY="233.0" mnemonicParsing="false" onAction="#handle" prefHeight="35.0" prefWidth="162.0" text="" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+  <stylesheets>
+    <URL value="@MainScreen.css" />
+  </stylesheets>
+</AnchorPane>

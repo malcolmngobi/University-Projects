@@ -1,0 +1,66 @@
+/*
+@author Isabirye Malcolm Ngobi
+*/
+
+.split-pane{
+     -fx-background-color: #7f7c79;
+}
+
+.list-view{
+    -fx-background-color: #7f7c79;
+}
+
+.list-cell{
+     -fx-background-color: null;
+}
+
+.button{
+    -fx-background-radius: null;
+    -fx-background-insets: null;
+}
+
+.button:hover{
+	-fx-effect: innershadow(one-pass-box, white, 15, 0.3, 1, 1);
+}
+
+.button:pressed{
+	-fx-effect: innershadow(one-pass-box, black, 30, 0.3, 1, 1);
+
+}
+
+#addClip{
+    -fx-background-image: url("images/addClip.png");
+}
+
+
+#addSlide{
+    -fx-background-image: url("images/addSlide.png");
+}
+
+#importFiles{
+    -fx-background-image: url("images/import.png");
+}
+
+#playID{
+    -fx-background-image: url("images/play.png");
+}
+
+#stopID{
+    -fx-background-image: url("images/stop.png");
+}
+
+#inCutID{
+    -fx-background-image: url("images/inCut.png");
+}
+
+#outCutID{
+    -fx-background-image: url("images/outCut.png");
+}
+
+#cutDo{
+    -fx-background-image: url("images/cutDo.png");
+}
+
+#marker{
+    -fx-background-image: url("images/marker.png");
+}
